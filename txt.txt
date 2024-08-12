@@ -1,0 +1,77 @@
+La solicitud "Elabore prueba de concepto de la arquitectura, implementando una funcionalidad de tipo consulta de la pregunta 1, haciendo uso de GIT con PHP" se refiere a la siguiente tarea:
+
+### **Significado de la Tarea:**
+
+1. **Prueba de Concepto de la Arquitectura:**
+   - **Probar la arquitectura del proyecto** significa asegurarte de que la estructura de tu proyecto está bien organizada y que puedes implementar y ejecutar funcionalidades correctamente dentro de esa arquitectura. En este caso, la arquitectura incluye la estructura de directorios del proyecto, la configuración de la base de datos, los controladores, etc.
+  
+2. **Funcionalidad de Tipo Consulta:**
+   - Se te pide que **implementar una funcionalidad específica** de consulta (por ejemplo, obtener libros) dentro de la API que has creado.
+
+3. **Haciendo Uso de GIT con PHP:**
+   - Se espera que gestiones el desarrollo de esta funcionalidad utilizando **GIT** para control de versiones. Esto incluye **crear una rama**, **implementar la funcionalidad**, **cometer los cambios**, y posiblemente **fusionar la rama** con la principal.
+
+### **Pasos para Realizar la Tarea:**
+
+#### **Paso 1: Configurar un Repositorio GIT**
+
+1. **Inicializar GIT:**
+   - Navega a la carpeta de tu proyecto:
+     ```bash
+     cd /ruta/a/tu/proyecto
+     ```
+   - Inicializa un repositorio GIT:
+     ```bash
+     git init
+     ```
+
+2. **Crear un Repositorio Remoto (Opcional):**
+   - Si usas GitHub, GitLab o Bitbucket, crea un nuevo repositorio en la plataforma y agrega la URL remota a tu proyecto:
+     ```bash
+     git remote add origin https://github.com/usuario/repositorio.git
+     ```
+
+#### **Paso 2: Crear una Rama para la Funcionalidad**
+
+1. **Crear una nueva rama para la funcionalidad de consulta:**
+   ```bash
+   git checkout -b feature/consulta_libros
+   ```
+
+#### **Paso 3: Implementar la Funcionalidad de Consulta**
+
+1. **Desarrollar la funcionalidad en la API:**
+   - Ya has implementado la funcionalidad para consultar libros (`GET /libros` y `GET /libros/{id}`) en la API PHP. Asegúrate de que está funcionando correctamente.
+
+#### **Paso 4: Probar la Funcionalidad**
+
+1. **Probar la funcionalidad en Postman o cURL:**
+   - Usa herramientas como Postman para hacer solicitudes GET y verificar que la funcionalidad de consulta funciona según lo esperado.
+
+#### **Paso 5: Cometer los Cambios en GIT**
+
+1. **Agregar los cambios al área de preparación:**
+   ```bash
+   git add .
+   ```
+
+2. **Cometer los cambios:**
+   ```bash
+   git commit -m "Implementar funcionalidad de consulta de libros"
+   ```
+
+#### **Paso 6: Subir los Cambios al Repositorio Remoto**
+
+1. **Hacer push de la rama al repositorio remoto:**
+   ```bash
+   git push -u origin feature/consulta_libros
+   ```
+
+#### **Paso 7: Opcional - Crear una Solicitud de Fusión (Pull Request)**
+
+1. **Crear una solicitud de fusión:**
+   - Si trabajas con un equipo, podrías crear una solicitud de fusión en la plataforma (GitHub, GitLab) para que otros revisen y aprueben la integración de tu funcionalidad en la rama principal (main/master).
+
+### **Resumen:**
+
+La tarea te pide que implementes una parte específica de tu API, como la consulta de libros, y que gestiones el desarrollo de esta funcionalidad utilizando GIT para mantener un control de versiones adecuado. Esto incluye crear una nueva rama, implementar el código, probarlo, cometer los cambios y luego subirlos a un repositorio remoto para una posible integración en la rama principal del proyecto.
